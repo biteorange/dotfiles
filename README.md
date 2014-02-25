@@ -1,5 +1,7 @@
 dotfiles.git
 ============
+The followings are from the origin repo:
+---
 Clone and run this on a new EC2 instance running Ubuntu 12.04.2 LTS to
 configure your `bash` and `emacs` development environment as follows:
 
