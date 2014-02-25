@@ -5,20 +5,20 @@
 ;; -- Global Settings --
 ;; ---------------------
 (add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/themes")
 (require 'cl)
 (require 'ido)
 (require 'ffap)
 (require 'uniquify)
 (require 'ansi-color)
 (require 'recentf)
-(require 'linum)
+(require 'linum)   
 (require 'smooth-scrolling)
 (require 'whitespace)
 (require 'dired-x)
 (require 'compile)
 (ido-mode t)
 (menu-bar-mode -1)
-(normal-erase-is-backspace-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
@@ -66,12 +66,4 @@
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
 
-;; ---------------------------
-;; -- JS Mode configuration --
-;; ---------------------------
-(load "js-config.el")
-(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
-(require 'sws-mode)
-(require 'jade-mode)    
-(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(require 'color-theme)

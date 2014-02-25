@@ -168,13 +168,8 @@ PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 ## -- 2) Set up aliases --
 ## -----------------------
 
-# 2.1) Safety
-alias rm="rm -i"
-alias mv="mv -i"
-alias cp="cp -i"
-set -o noclobber
-
 # 2.2) Listing, directories, and motion
+alias ls="ls --color=auto"
 alias ll="ls -alrtF --color"
 alias la="ls -A"
 alias l="ls -CF"
